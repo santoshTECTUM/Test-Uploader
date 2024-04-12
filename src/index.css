@@ -110,6 +110,12 @@
 .input-group-text {
     color: hsl(0, 0%, 20%) !important;
     border: 1px solid #11cdef !important;
+    height: 100%;
+    border-end-start-radius: 5px !important;
+    border-start-start-radius: 5px !important;
+    border-radius:0px
+
+
 }
 
 .input-group-textvalidation {
