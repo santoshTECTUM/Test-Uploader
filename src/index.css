@@ -8,4 +8,124 @@
 
 .viewArea {
     height: 84.2vh;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: -15px;
+}
+
+/* ............sdr import start ...... */
+#summary_main {
+    color: #11cdef;
+    font-weight: bold;
+}
+
+.readMore {
+    color: rgb(31 108 206);
+    cursor: 'pointer'
+}
+
+.sdrMain {
+    margin: 0% 4% 0% 4% !important;
+}
+
+.srdrInput .css-1hb7zxy-IndicatorsContainer {
+    display: none !important;
+}
+
+.srdrInput.css-t3ipsp-control {
+    box-shadow: 0 0 0 2px #11cdef !important;
+
+}
+
+.screenReso .card {
+    margin: 0% 3% 0% 3%;
+    padding: 0% 3% 0% 3%;
+}
+
+.sdrMain {
+    margin: 0% 4% 0% 4% !important;
+}
+
+.srdrInput {
+    padding: 0% 4% 0% 4% !important;
+}
+
+.srdrInput .react-select__control {
+    display: flex !important;
+    width: 100% !important;
+    border: white !important
+}
+
+.srdrInput .check {
+    display: flex !important;
+    flex-grow: 1 !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+    height: calc(1.5em + 1.25rem + 2px) !important;
+    background-color: white !important;
+    background-clip: padding-box !important;
+    border: 1px solid #11cdef !important;
+    border-top-right-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+    border-bottom-left-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+}
+
+.srdrInput .checkDate {
+    display: flex !important;
+    flex-grow: 1 !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+    height: calc(1.8em + 1.25rem + 2px) !important;
+    background-color: white !important;
+    background-clip: padding-box !important;
+    border: 1px solid #11cdef !important;
+    /* border-top-right-radius: 5px !important; */
+    /* border-bottom-right-radius: 5px !important; */
+    border-radius: 5px !important;
+    border-bottom-left-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+}
+
+.srdrInput .phone .css-t3ipsp-control {
+
+    border-color: #11cdef !important;
+    box-shadow: 0 0 0 1px #11cdef !important;
+}
+
+.srdrInput .checkSelect {
+    /* display: flex !important; */
+    flex-grow: 1 !important;
+    font-weight: 400 !important;
+    line-height: calc(1.8em + 0.4rem + 0px) !important;
+
+    height: calc(1.8em + 1.25rem + 2px) !important;
+    background-color: white !important;
+    background-clip: padding-box !important;
+    border: 1px solid #11cdef !important;
+    border-top-right-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+
+}
+.input-group-text {
+    color: hsl(0, 0%, 20%) !important;
+    border: 1px solid #11cdef !important;
+}
+
+.input-group-textvalidation {
+    color: hsl(0, 0%, 20%) !important;
+    border: 1px solid red !important;
+    display: flex !important;
+    align-items: center !important;
+    padding: 0.625rem 0.75rem !important;
+    margin-bottom: 0 !important;
+    font-size: 0.875rem !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+    color: #adb5bd !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    background-color: #fff !important;
+    
+    border-radius: 0rem !important;
 }

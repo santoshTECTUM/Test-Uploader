@@ -27,9 +27,9 @@ const TowerUploade = () => {
     </Row> */}
 
     <Row className="mt-2">
-      <Col sm="8" md="8" lg="8" xl="8" className="screenReso p-0">
-        <Card className="shadow  ">
-          <Col
+      <Col sm="8" md="8" lg="8" xl="8" className="screenReso">
+        {/* <Card className="shadow  "> */}
+          {/* <Col
             sm="12"
             md="12"
             lg="12"
@@ -50,7 +50,7 @@ const TowerUploade = () => {
               <i className="fa fa-arrow-left mr-2"></i>
               Go Back
             </Button>
-          </Col>
+          </Col> */}
 
           <Row
             className="sdrMain border  border-dark rounded mb-4 mt-6"
@@ -62,15 +62,15 @@ const TowerUploade = () => {
             >
               <div className="row">
                 <div className="col-12">
-                  {/* {isEdit ? (
-                    <span className="text-dark h1">
+                  {true ? (
+                    <span className="text-dark h3">
                       {"EDIT"} &nbsp;{"TOWER DATA"}
                     </span>
                   ) : (
-                    <span className="text-dark h1">
+                    <span className="text-dark h3">
                       {"INSERT"} &nbsp;{"TOWER DATA"}
                     </span>
-                  )} */}
+                  )}
                 </div>
               </div>
             </CardHeader>
@@ -273,9 +273,9 @@ const TowerUploade = () => {
 
               <div className="input-group">
                 <div className="input-group-prepend">
-                  {/* <span className={latitudeValidation ? "input-group-textvalidation" : "input-group-text"}>
+                  {/* <span className={latitudeValidation ? "input-group-textvalidation" : "input-group-text"}> */}
                     <i className="fas fa-map-pin"></i>
-                  </span> */}
+                  {/* </span> */}
                 </div>
                 <input
                   type="text"
@@ -325,15 +325,15 @@ const TowerUploade = () => {
 
             <Col sm="12" md="12" lg="6" xl="6" xxl="6" className=" srdrInput mb-3">
               <Label className="m-0" >Tower Longitude</Label>
-              {/* <span className=" m-0 float-right" style={{ paddingTop: "6px", color: "red" }}>
-                {TowerData?.tower_longitude === "" ? "Required field*" : ""}
-              </span> */}
+              <span className=" m-0 float-right" style={{ paddingTop: "6px", color: "red" }}>
+                {/* {TowerData?.tower_longitude === "" ? "Required field*" : ""} */}
+              </span>
 
               <div className="input-group">
                 <div className="input-group-prepend">
-                  {/* <span className={longitudeValidation ? "input-group-textvalidation" : "input-group-text"}>
+                  {/* <span className={longitudeValidation ? "input-group-textvalidation" : "input-group-text"}> */}
                     <i className="fas fa-map-pin"></i>
-                  </span> */}
+                  {/* </span> */}
                 </div>
                 <input
                   type="text"
@@ -522,7 +522,7 @@ const TowerUploade = () => {
             </Col>
 
           </Row>
-        </Card>
+        {/* </Card> */}
       </Col>
 
       <Col sm="4" md="4" lg="4" xl="4">
