@@ -1,10 +1,10 @@
-
 import Header from './Component/Layout/Header'
 import Footer from './Component/Layout/Footer'
 import { Router } from './route'
 import img from './assets/imges/iact-logo.png'
 import { memo, useMemo } from 'react';
 import TowerUploade from './Component/ViewLayout/TowerUploade';
+import { Card } from 'reactstrap';
 function App() {
   console.log("======app======");
 
@@ -17,9 +17,9 @@ function App() {
           <Header logo={img} setting={false} route={Router} />
         </div>
 
-        <div className='viewArea'>
+        <Card className='viewArea p-5'>
           <TowerUploade></TowerUploade>
-        </div>
+        </Card>
 
         <div>
 
