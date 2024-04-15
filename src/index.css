@@ -113,9 +113,11 @@
     color: hsl(0, 0%, 20%) !important;
     border: 1px solid #11cdef !important;
     height: 100%;
-    border-end-start-radius: 5px !important;
-    border-start-start-radius: 5px !important;
-    border-radius:0px
+ 
+    border-bottom-left-radius: 5PX !important;
+    border-top-left-radius: 5px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
 
 
 }
@@ -136,4 +138,13 @@
     background-color: #fff !important;
     
     border-radius: 0rem !important;
+}
+.modal-header .close {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.btnDelete {
+    background-color: #D2122E !important;
+    color: white !important
 }
