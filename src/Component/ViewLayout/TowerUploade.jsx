@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import {
   Button,
   Card,
@@ -10,6 +10,7 @@ import {
   Table,
 } from "reactstrap";
 import ReactPaginate from "react-paginate";
+import '@fortawesome/fontawesome-free/css/all.min.css';
 const TowerUploade = () => {
   return (
     <>
@@ -28,117 +29,72 @@ const TowerUploade = () => {
 
     <Row className="mt-2">
       <Col sm="8" md="8" lg="8" xl="8" className="screenReso">
-        {/* <Card className="shadow  "> */}
-          {/* <Col
+        <Row
+          className="sdrMain border border-dark rounded mb-4 mt-6"
+          style={{ boxShadow: "2px 3px 2px 2px gray" }}
+        >
+          <CardHeader
+            className="text-center w-100 p-0"
+            style={{ borderBottom: "2px dotted black" }}
+          >
+            <div className="row">
+              <div className="col-12">
+                {true ? (
+                  <span className="text-dark h3">
+                    {"EDIT"} &nbsp;{"TOWER DATA"}
+                  </span>
+                ) : (
+                  <span className="text-dark h3">
+                    {"INSERT"} &nbsp;{"TOWER DATA"}
+                  </span>
+                )}
+              </div>
+            </div>
+          </CardHeader>
+
+          <Col
             sm="12"
             md="12"
             lg="12"
             xl="12"
-            className="d-flex justify-content-start"
+            xxl="12"
+            className="text-right mt-1"
+            style={{ textAlign: 'right' }}
           >
-            <Button
-              className=" btn btnBlack mt-2"
-              // style={{ background: process.env.REACT_APP_BACKGROUND_COLOR, position: "absolute", }}
-              style={{ background: "black", position: "absolute", }}
-              // onClick={(e) => {
-              //   // props?.setIsTowerSample(!props?.isTowerSample)
-              //   props?.setactiveTabGP(5);
-              //   UseHeaderTab(tabValue(5));
-              // }}
-
+            <a
+              className="text-primary"
+              style={{ textDecoration: "underline" }}
             >
-              <i className="fa fa-arrow-left mr-2"></i>
-              Go Back
-            </Button>
-          </Col> */}
+              Reset All {/* Reset All link */}
+            </a>
+          </Col>
+          <Col sm="12" md="12" lg="6" xl="6" xxl="6" className="srdrInput mb-3">
+            <Label className="m-0">Tower CGI</Label>
+            <span className="m-0 float-right" style={{ paddingTop: "6px", color: "red" }}>
+              {/* {TowerData?.tower_cgi === "" ? "Required field*" : ""} */}
+            </span>
 
-          <Row
-            className="sdrMain border  border-dark rounded mb-4 mt-6"
-            style={{ boxShadow: "2px 3px 2px 2px gray" }}
-          >
-            <CardHeader
-              className="text-center w-100 p-0"
-              style={{ borderBottom: "2px dotted black" }}
-            >
-              <div className="row">
-                <div className="col-12">
-                  {true ? (
-                    <span className="text-dark h3">
-                      {"EDIT"} &nbsp;{"TOWER DATA"}
-                    </span>
-                  ) : (
-                    <span className="text-dark h3">
-                      {"INSERT"} &nbsp;{"TOWER DATA"}
-                    </span>
-                  )}
-                </div>
+            <div className="input-group">
+              <div className="input-group-prepend">
+                <span className="input-group-text">
+                  <i className="fas fa-broadcast-tower"></i> {/* Tower icon */}
+                </span>
               </div>
-            </CardHeader>
-
-            <Col
-              sm="12"
-              md="12"
-              lg="12"
-              xl="12"
-              xxl="12"
-              className="text-right mt-1"
-              // onClick={() => {
-              //   setTowerData({
-              //     ...TowerData,
-              //     tower_cgi: "",
-              //     tower_location: "",
-              //     tower_site_name: "",
-              //     tower_azimuth: "",
-              //     tower_radius: "",
-              //     tower_district: "",
-              //     tower_latitude: "",
-              //     tower_longitude: "",
-              //     tower_network_type: "",
-              //     tower_operator: "",
-              //     tower_state: "",
-              //     tower_town: "",
-              //     tower_pincode: "",
-              //     tower_height: ""
-              //   });
-              //   setIsEdit(false);
-              //   setMobile([]);
-              // }}
-            >
-              <a
-                className="text-primary"
-                // disabled={isReset}
-                style={{ textDecoration: "underline" }}
-              >
-                Reset All
-              </a>
-            </Col>
-            <Col sm="12" md="12" lg="6" xl="6" xxl="6" className=" srdrInput mb-3">
-              <Label className="m-0">Tower CGI</Label>
-              <span className=" m-0 float-right" style={{ paddingTop: "6px", color: "red" }}>
-                {/* {TowerData?.tower_cgi === "" ? "Required field*" : ""} */}
-              </span>
-
-              <div className="input-group">
-                <div className="input-group-prepend">
-                  <span className="input-group-text ">
-                    <i className="fas fa-broadcast-tower"></i>
-                  </span>
-                </div>
-                <input
-                  type="text"
-                  className="check inputFocus"
-                  name="tower_cgi"
-                  placeholder="Tower CGI"
-                  // value={TowerData?.tower_cgi || ""}
-                  // onChange={(e) => {
-                  //   setTowerData({
-                  //     ...TowerData,
-                  //     tower_cgi: e.target.value,
-                  //   });
-                  // }}
-                />
-              </div>
-            </Col>
+              <input
+                type="text"
+                className="check inputFocus"
+                name="tower_cgi"
+                placeholder="Tower CGI"
+                // value={TowerData?.tower_cgi || ""}
+                // onChange={(e) => {
+                //   setTowerData({
+                //     ...TowerData,
+                //     tower_cgi: e.target.value,
+                //   });
+                // }}
+              />
+            </div>
+          </Col>
 
             <Col sm="12" md="12" lg="6" xl="6" xxl="6" className=" srdrInput mb-3">
               <Label className="m-0">Tower Network Type</Label>
