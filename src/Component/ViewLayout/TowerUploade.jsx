@@ -890,7 +890,7 @@ const TowerUploade = () => {
               className="align-items-center table-flush table-striped mb-1 "
               responsive
             >
-              <thead className="tableHead" >
+              <thead className="tableHead">
                 <tr>
                   <th style={{ width: "5%" }}> #</th>
                   <th style={{ width: "30%" }}>Tower CGI</th>

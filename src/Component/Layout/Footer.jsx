@@ -1,6 +1,7 @@
 import React, { memo } from 'react'
 
 const Footer = ({ logo, setting, route }) => {
+  console.log("-----ff---------");
   return (
 
     <section>

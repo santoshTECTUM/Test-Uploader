@@ -132,12 +132,16 @@
     font-size: 0.875rem !important;
     font-weight: 400 !important;
     line-height: 1.5 !important;
-    color: #adb5bd !important;
+    /* color: #adb5bd !important; */
     text-align: center !important;
     white-space: nowrap !important;
     background-color: #fff !important;
-    
+    height: 100%;
     border-radius: 0rem !important;
+    border-bottom-left-radius: 5PX !important;
+    border-top-left-radius: 5px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
 }
 .modal-header .close {
     padding: 0px !important;
@@ -147,4 +151,29 @@
 .btnDelete {
     background-color: #D2122E !important;
     color: white !important
+}
+
+.inputFocus {
+    color: hsl(0, 0%, 20%) !important;
+}
+
+.inputFocus:focus-visible {
+    outline-offset: 0px !important;
+  
+    color: hsl(0, 0%, 20%) !important; 
+outline:  #11cdef !important;
+
+}
+
+.table .tableHead{
+    background: linear-gradient(87deg, #11cdef 0, #1171ef 100%) !important;
+    background-color: #11cdef !important;
+
+    color: white;
+}
+nav{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    justify-content: flex-end
 }
