@@ -1,6 +1,6 @@
 import Header from './Component/Layout/Header'
 import Footer from './Component/Layout/Footer'
-import { Router } from './route'
+// import { Router } from './route'
 import img from './assets/imges/iact-logo.png'
 import { memo, useMemo } from 'react';
 import TowerUploade from './Component/ViewLayout/TowerUploade';
@@ -14,7 +14,7 @@ function App() {
       <div className='flex-direction-column bg-body-secondary'>
         <div>
 
-          <Header logo={img} setting={false} route={Router} />
+          <Header logo={img}  />
         </div>
 
         <Card className='viewArea p-5'>

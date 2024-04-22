@@ -72,7 +72,19 @@
     border-bottom-left-radius: 0px !important;
     border-top-left-radius: 0px !important;
 }
+.inputFocus {
+    color: hsl(0, 0%, 20%) !important;
+ 
 
+}
+
+.inputFocus:focus-visible {
+    outline-offset: 0px !important;
+    border-width: 2px !important;
+    /* border-color: #000000 !important; */
+    color: hsl(0, 0%, 20%);
+  
+}
 .srdrInput .checkDate {
     display: flex !important;
     flex-grow: 1 !important;
@@ -96,7 +108,7 @@
 }
 
 .srdrInput .checkSelect {
-    /* display: flex !important; */
+     /* display: flex !important; */
     flex-grow: 1 !important;
     font-weight: 400 !important;
     line-height: calc(1.8em + 0.4rem + 0px) !important;
@@ -132,12 +144,22 @@
     font-size: 0.875rem !important;
     font-weight: 400 !important;
     line-height: 1.5 !important;
-    color: #adb5bd !important;
+    height: 100%;
+    /* color: #11cdef !important; */
     text-align: center !important;
     white-space: nowrap !important;
     background-color: #fff !important;
-    
     border-radius: 0rem !important;
+    color: hsl(0, 0%, 20%) !important;
+    border: 1px solid #11cdef !important;
+    height: 100%;
+    border-bottom-left-radius: 5PX !important;
+    border-top-left-radius: 5px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+.tableHead{
+    background: linear-gradient(87deg, rgb(17, 205, 239) 0px, rgb(17, 113, 239) 100%) !important;
 }
 .modal-header .close {
     padding: 0px !important;
@@ -147,4 +169,8 @@
 .btnDelete {
     background-color: #D2122E !important;
     color: white !important
+}
+
+.thead{
+    background: linear-gradient(87deg, rgb(17, 205, 239) 0px, rgb(17, 113, 239) 100%);
 }
