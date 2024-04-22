@@ -375,7 +375,7 @@ const TowerUploade = () => {
             </Col>
             <Col sm="12" md="12" lg="6" xl="6" xxl="6" className="srdrInput mb-3">
               <Label className="m-0">Tower CGI</Label>
-              <span className="m-0 float-right" style={{ paddingTop: "6px", color: "red" }}>
+              <span className="m-0 float-right" style={{textAlign: 'right', paddingTop: "6px", color: "red" }}>
                 {TowerData?.tower_cgi === "" ? "Required field*" : ""}
               </span>
 
@@ -773,7 +773,7 @@ const TowerUploade = () => {
                   id=""
                   // style={{ background: process.env.REACT_APP_BACKGROUND_COLOR }}
                   // style={{ background: linear-gradient(87deg, rgb(17, 205, 239) 0px, rgb(17, 113, 239) 100%); }}
-                  style={{ background: "linear-gradient(87deg, rgb(17, 205, 239) 0px, rgb(17, 113, 239) 100%)" }}
+                  style={{color: "white", background: "linear-gradient(87deg, rgb(17, 205, 239) 0px, rgb(17, 113, 239) 100%)" }}
                   className="btn btnBlack w-25"
                   SDR
                   Submit
@@ -855,7 +855,7 @@ const TowerUploade = () => {
                     id="uploadFile"
                     className="btn btnBlack m-auto w-100"
                     // style={{ background: process.env.REACT_APP_BACKGROUND_COLOR }}
-                    style={{ background: "linear-gradient(87deg, rgb(17, 205, 239) 0px, rgb(17, 113, 239) 100%)" }}
+                    style={{ color: "white", background: "linear-gradient(87deg, rgb(17, 205, 239) 0px, rgb(17, 113, 239) 100%)" }}
                     // //  isDisabled={false}
                     // disabled={isUploadTower || selectedFile?.length == 0}
                     onClick={(e) => {
@@ -890,7 +890,7 @@ const TowerUploade = () => {
               className="align-items-center table-flush table-striped mb-1 "
               responsive
             >
-              <thead className="tableHead" >
+              <thead className="tableHead" style={{ background: "linear-gradient(87deg, rgb(17, 205, 239) 0px, rgb(17, 113, 239) 100%)" }} >
                 <tr>
                   <th style={{ width: "5%" }}> #</th>
                   <th style={{ width: "30%" }}>Tower CGI</th>
